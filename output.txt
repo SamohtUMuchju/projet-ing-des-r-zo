@@ -1,0 +1,129 @@
+### Importation des donnÚes ### 
+### Reformatage des donnÚes : ajout d'un index sur le temps ### 
+### Reformatage des donnÚes : ajout d'un index sur les satelites ### 
+### GÚnÚration des tableaux de nodes en fonction du temps ### 
+### GÚnÚration des swarms correspondants a chaque instants ###
+### GÚnÚration des matrices d'adjacence ###
+### Analyse des metriques pour chaque graphe ###
+### Analyse des metriques moyennes de l'ensemble ###
+Metric(MeanDegree=34.356799999999986, MeanClusterCoef=0.7126120278787202, Connexity=0.2644, Efficiency=0.10938519641965992)
+Top Importance Worst
+[21, 20, 2, 12, 45, 46, 8, 86, 3, 7]
+Top Centralite Worst
+[97, 90, 22, 19, 18, 92, 87, 33, 78, 27]
+Top Importance Best
+[27, 23, 7, 18, 8, 6, 28, 42, 47, 10]
+Top Centralite Best
+[27, 17, 78, 90, 71, 33, 84, 70, 42, 75]
+Importance 1
+[Metric(MeanDegree=38.42424242424242, MeanClusterCoef=0.7563496837157766, Connexity=1, Efficiency=0.431325089116754), Metric(MeanDegree=37.656565656565654, MeanClusterCoef=0.733794994734377, Connexity=1, Efficiency=0.39233817701453105)]
+Importance 3
+[Metric(MeanDegree=37.07216494845361, MeanClusterCoef=0.7569534179340937, Connexity=1, Efficiency=0.4278568505297622), Metric(MeanDegree=36.94845360824742, MeanClusterCoef=0.7346758395676776, Connexity=1, Efficiency=0.3914219153007738)]
+Importance 5
+[Metric(MeanDegree=36.06315789473684, MeanClusterCoef=0.7566012421981995, Connexity=1, Efficiency=0.42651228733459357), Metric(MeanDegree=36.06315789473684, MeanClusterCoef=0.7349000997615257, Connexity=1, Efficiency=0.39015217015389936)]
+Importance 7
+[Metric(MeanDegree=35.225806451612904, MeanClusterCoef=0.756169000669284, Connexity=1, Efficiency=0.4246992388902529), Metric(MeanDegree=35.333333333333336, MeanClusterCoef=0.7351403981623447, Connexity=1, Efficiency=0.388841433259902)]
+Importance 10
+[Metric(MeanDegree=34.422222222222224, MeanClusterCoef=0.754896181144452, Connexity=1, Efficiency=0.4243503772003353), Metric(MeanDegree=34.955555555555556, MeanClusterCoef=0.7324417422212832, Connexity=1, Efficiency=0.3977802877768502)]
+Centralite 1
+[Metric(MeanDegree=38.42424242424242, MeanClusterCoef=0.7563496837157766, Connexity=1, Efficiency=0.431325089116754), Metric(MeanDegree=37.474747474747474, MeanClusterCoef=0.7345036863784591, Connexity=1, Efficiency=0.3918049170497701)]
+Centralite 3
+[Metric(MeanDegree=36.68041237113402, MeanClusterCoef=0.7584416377520931, Connexity=1, Efficiency=0.4250926176922382), Metric(MeanDegree=35.855670103092784, MeanClusterCoef=0.7348017674113578, Connexity=1, Efficiency=0.387026448932582)]
+Centralite 5
+[Metric(MeanDegree=34.94736842105263, MeanClusterCoef=0.7606647926126837, Connexity=1, Efficiency=0.41994323205062584), Metric(MeanDegree=34.27368421052632, MeanClusterCoef=0.7351780976303747, Connexity=1, Efficiency=0.38162290160260476)]
+Centralite 7
+[Metric(MeanDegree=33.29032258064516, MeanClusterCoef=0.7626803819009054, Connexity=1, Efficiency=0.4141249700742159), Metric(MeanDegree=32.75268817204301, MeanClusterCoef=0.7352463917763459, Connexity=1, Efficiency=0.3771256649516002)]
+Centralite 10
+[Metric(MeanDegree=30.933333333333334, MeanClusterCoef=0.7649562066121974, Connexity=1, Efficiency=0.40685117283640565), Metric(MeanDegree=30.555555555555557, MeanClusterCoef=0.7353463620062622, Connexity=1, Efficiency=0.36969420356001825)]
+
+
+Aleatoire 1
+[Metric(MeanDegree=38.707070707070706, MeanClusterCoef=0.7550926321913455, Connexity=1, Efficiency=0.4325433602542036), Metric(MeanDegree=38.14141414141414, MeanClusterCoef=0.7335557036454127, Connexity=1, Efficiency=0.3948672495064663)]
+Aleatoire 3
+[Metric(MeanDegree=37.81443298969072, MeanClusterCoef=0.7561136687191911, Connexity=1, Efficiency=0.43053903175620023), Metric(MeanDegree=37.03092783505155, MeanClusterCoef=0.7341545605794653, Connexity=1, Efficiency=0.39238500354476835)]
+Aleatoire 5
+[Metric(MeanDegree=35.55789473684211, MeanClusterCoef=0.7588044369867516, Connexity=1, Efficiency=0.42236053912392363), Metric(MeanDegree=35.03157894736842, MeanClusterCoef=0.7337299399102627, Connexity=1, Efficiency=0.38515705018777735)]
+Aleatoire 7
+[Metric(MeanDegree=37.053763440860216, MeanClusterCoef=0.7513455529193473, Connexity=1, Efficiency=0.4380127620783956), Metric(MeanDegree=36.43010752688172, MeanClusterCoef=0.7419747184834018, Connexity=1, Efficiency=0.40387578799906604)]
+Aleatoire 10
+[Metric(MeanDegree=35.24444444444445, MeanClusterCoef=0.7543044804154558, Connexity=0, Efficiency=0), Metric(MeanDegree=33.422222222222224, MeanClusterCoef=0.73215416870019, Connexity=1, Efficiency=0.38542063189950515)]
+
+
+##### RESULTATS #####
+### Statistiques initiales du pire essaim connexe, l'essaim :1564
+Metric(MeanDegree=38.32, MeanClusterCoef=0.7342624746512866, Connexity=1, Efficiency=0.3942129538376631)
+
+## Statistiques du pire essaim une fois le noeud de plus haute 'importance' supprime 
+Metric(MeanDegree=37.656565656565654, MeanClusterCoef=0.733794994734377, Connexity=1, Efficiency=0.39233817701453105)
+# Variation de degre moyen :0.6634343434343464
+# Variation de coefficient de clustering moyen :0.00046747991690954116
+# Variation d'efficacite :0.0018747768231320294
+
+## Statistiques du pire essaim une fois les 5 noeud de plus haute 'importance' supprimes 
+Metric(MeanDegree=36.06315789473684, MeanClusterCoef=0.7349000997615257, Connexity=1, Efficiency=0.39015217015389936)
+# Variation de degre moyen :2.2568421052631606
+# Variation de coefficient de clustering moyen :-0.0006376251102391262
+# Variation d'efficacite :0.0040607836837637246
+
+## Statistiques du pire essaim une fois le noeud de plus haute centralite supprime 
+Metric(MeanDegree=37.474747474747474, MeanClusterCoef=0.7345036863784591, Connexity=1, Efficiency=0.3918049170497701)
+# Variation de degre moyen :0.8452525252525263
+# Variation de coefficient de clustering moyen :-0.00024121172717250783
+# Variation d'efficacite :0.0024080367878929754
+
+## Statistiques du pire essaim une fois les 5 noeud de plus haute centralite supprimes 
+Metric(MeanDegree=34.27368421052632, MeanClusterCoef=0.7351780976303747, Connexity=1, Efficiency=0.38162290160260476)
+# Variation de degre moyen :4.046315789473681
+# Variation de coefficient de clustering moyen :-0.0009156229790880932
+# Variation d'efficacite :0.012590052235058324
+
+## Statistiques du pire essaim une fois un noeud aleatoire supprime
+Metric(MeanDegree=38.14141414141414, MeanClusterCoef=0.7335557036454127, Connexity=1, Efficiency=0.3948672495064663)
+# Variation de degre moyen :0.17858585858586196
+# Variation de coefficient de clustering moyen :0.0007067710058739074
+# Variation d'efficacite :-0.0006542956688032064
+
+## Statistiques du pire essaim une fois 5 noeuds aleatoires supprimes 
+Metric(MeanDegree=35.03157894736842, MeanClusterCoef=0.7337299399102627, Connexity=1, Efficiency=0.38515705018777735)
+# Variation de degre moyen :3.288421052631577
+# Variation de coefficient de clustering moyen :0.0005325347410238823
+# Variation d'efficacite :0.009055903649885733
+
+### Statistiques initiales du meilleur essaim connexe, l'essaim :5367
+Metric(MeanDegree=39.36, MeanClusterCoef=0.7550379351303671, Connexity=1, Efficiency=0.4341596839317501)
+
+## Statistiques du meilleur essaim une fois le noeud de plus haute 'importance' supprime 
+Metric(MeanDegree=38.42424242424242, MeanClusterCoef=0.7563496837157766, Connexity=1, Efficiency=0.431325089116754)
+# Variation de degre moyen :0.9357575757575773
+# Variation de coefficient de clustering moyen :-0.0013117485854095001
+# Variation d'efficacite :0.0028345948149960942
+
+## Statistiques du meilleur essaim une fois les 5 noeud de plus haute 'importance' supprime 
+Metric(MeanDegree=36.06315789473684, MeanClusterCoef=0.7566012421981995, Connexity=1, Efficiency=0.42651228733459357)
+# Variation de degre moyen :3.29684210526316
+# Variation de coefficient de clustering moyen :-0.0015633070678323646
+# Variation d'efficacite :0.007647396597156519
+
+## Statistiques du meilleur essaim une fois le noeud de plus haute centralite supprime 
+Metric(MeanDegree=38.42424242424242, MeanClusterCoef=0.7563496837157766, Connexity=1, Efficiency=0.431325089116754)
+# Variation de degre moyen :0.9357575757575773
+# Variation de coefficient de clustering moyen :-0.0013117485854095001
+# Variation d'efficacite :0.0028345948149960942
+
+## Statistiques du meilleur essaim une fois les 5 noeud de plus haute centralite supprime 
+Metric(MeanDegree=34.94736842105263, MeanClusterCoef=0.7606647926126837, Connexity=1, Efficiency=0.41994323205062584)
+# Variation de degre moyen :4.412631578947369
+# Variation de coefficient de clustering moyen :-0.005626857482316616
+# Variation d'efficacite :0.014216451881124248
+
+## Statistiques du meilleur essaim une fois un noeud aleatoire supprime
+Metric(MeanDegree=38.707070707070706, MeanClusterCoef=0.7550926321913455, Connexity=1, Efficiency=0.4325433602542036)
+# Variation de degre moyen :0.6529292929292936
+# Variation de coefficient de clustering moyen :-5.469706097838145e-05
+# Variation d'efficacite :0.001616323677546494
+
+## Statistiques du meilleur essaim une fois 5 noeuds aleatoires supprimes 
+Metric(MeanDegree=35.55789473684211, MeanClusterCoef=0.7588044369867516, Connexity=1, Efficiency=0.42236053912392363)
+# Variation de degre moyen :3.802105263157891
+# Variation de coefficient de clustering moyen :-0.0037665018563844965
+# Variation d'efficacite :0.011799144807826456
