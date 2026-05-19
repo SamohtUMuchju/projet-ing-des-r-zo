@@ -41,9 +41,9 @@ def generate_plots():
 
     scenarios = [
         ("Baseline\n(0 panne)", failed_none),
-        ("Importance\n(Hubs)", failed_importance),
+        ("Aléatoire\n(Bruit)", failed_random),
         ("Centralité\n(Plus connectés)", failed_centrality),
-        ("Aléatoire\n(Bruit)", failed_random)
+        ("Importance\n(Hubs)", failed_importance)
     ]
 
     # Dictionnaires pour stocker les résultats : [Protocol] -> [Liste de Ratios par scénario]
@@ -135,6 +135,53 @@ def generate_plots():
 
     plt.tight_layout()
     plt.savefig('plot_3_impact_degres.png')
+    plt.show()
+
+    # =========================================================================
+    # GRAPHIQUE 4 : ANALYSE DE LA ROBUSTESSE DE PROPHET FACE AUX PANNES
+    # =========================================================================
+    plt.figure(figsize=(10, 6.5))
+    scen_labels = [s[0].replace('\n', ' ') for s in scenarios]
+    
+    x4 = np.arange(len(scen_labels))
+    width4 = 0.35
+    
+    prophet_norm = results_norm["PRoPHET"]
+    prophet_bw = results_bw["PRoPHET"]
+    
+    # Dessin des barres
+    bar_norm = plt.bar(x4 - width4/2, prophet_norm, width4, label='Modèle Idéal (Range binaire)', color='#2b5c8f')
+    bar_bw = plt.bar(x4 + width4/2, prophet_bw, width4, label='Modèle Réel (Débit & Congestion)', color='#d95f02')
+    
+    plt.ylabel('Delivery Ratio (%)', fontweight='bold')
+    plt.xlabel('Scénarios de pannes (5 satellites détruits)', fontweight='bold')
+    plt.title("Robustesse du protocole PRoPHET face aux différents types de pannes", fontweight='bold', fontsize=12, pad=15)
+    plt.xticks(x4, scen_labels)
+    plt.ylim(0, 115) # laisser un espace pour les étiquettes et annotations
+    plt.legend(loc='upper right')
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    
+    # Ajouter des labels de valeurs sur les barres
+    for idx, val in enumerate(prophet_norm):
+        plt.text(idx - width4/2, val + 1, f"{val:.1f}%", ha='center', va='bottom', fontsize=9, fontweight='bold', color='#1a3d60')
+    for idx, val in enumerate(prophet_bw):
+        plt.text(idx + width4/2, val + 1, f"{val:.1f}%", ha='center', va='bottom', fontsize=9, fontweight='bold', color='#803300')
+        
+    # Annotations d'explications sur le graphique
+    # 1. Robustesse aléatoire
+    plt.annotate('Haute Robustesse\n(Comportement similaire\nau témoin)',
+                 xy=(1, max(prophet_norm[1], prophet_bw[1])), xytext=(0.8, 102),
+                 arrowprops=dict(facecolor='green', shrink=0.08, width=1.5, headwidth=6, alpha=0.7),
+                 ha='center', fontsize=9, bbox=dict(boxstyle="round,pad=0.3", fc="#e1f5fe", ec="#b3e5fc", lw=1))
+                 
+    # 2. Fragilité attaques ciblées
+    plt.annotate('Fragilité Critique\n(La perte de hubs/ponts\ncoupe les routes de transit)',
+                 xy=(3, max(prophet_norm[3], prophet_bw[3])), xytext=(2.6, 92),
+                 arrowprops=dict(facecolor='red', shrink=0.08, width=1.5, headwidth=6, alpha=0.7),
+                 ha='center', fontsize=9, bbox=dict(boxstyle="round,pad=0.3", fc="#ffebee", ec="#ffcdd2", lw=1))
+
+    plt.tight_layout()
+    plt.savefig('plot_4_prophet_resilience.png')
     plt.show()
 
 if __name__ == "__main__":
